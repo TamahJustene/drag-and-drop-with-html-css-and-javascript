@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drag and Drop</title>
+    <!-- <style>
+      .container {
+        display: inline-block;
+        width: 45%;
+        height: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        overflow: auto;
+      }
+
+      .item {
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: move;
+      }
+
+      .item.dragging {
+        opacity: 0.5;
+      }
+
+      .success-message {
+        color: green;
+        margin-top: 10px;
+      }
+    </style> -->
+    <link rel="stylesheet" href="drop.css" />
+  </head>
+
+  <body>
+    <div class="allcontainers">
+      <div class="container" id="container1">
+        <div class="item" draggable="true">
+          <img src="asserts/Coding 1.jpg" alt="" />
+        </div>
+        <div class="item" draggable="true">
+          <img src="asserts/Coding 2.jpg" alt="" />
+        </div>
+        <div class="item" draggable="true">
+          <img src="asserts/flower1.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="container" id="container2">
+        <!-- <div class="item" draggable="true"></div> -->
+      </div>
+    </div>
+
+    <div class="success-message" id="successMessage"></div>
+    <div class="button1" >
+      <button id="resetButton">Reset</button>
+    </div>
+    <script src="drag.js"></script>
+  </body>
+</html>
